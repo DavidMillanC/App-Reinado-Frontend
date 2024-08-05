@@ -52,21 +52,21 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
+          <Route exact path="/resultados">
             <Tab1 />
           </Route>
           <Route exact path="/candidatas">
             <Tab2 />
           </Route>
-          <Route path="/tab3">
+          <Route path="/puntajes">
             <Tab3 />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/resultados" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="tab1" href="/resultados">
             <IonIcon aria-hidden="true" icon={medalOutline} />
             
             <IonLabel>Resultados</IonLabel>
@@ -75,7 +75,7 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={womanOutline} />
             <IonLabel>Candidatas</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="tab3" href="/puntajes">
             <IonIcon aria-hidden="true" icon={diceOutline} />
             <IonLabel>Puntuaciones</IonLabel>
           </IonTabButton>
