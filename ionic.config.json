@@ -1,0 +1,7 @@
+{
+  "name": "App-Reinado-Frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
